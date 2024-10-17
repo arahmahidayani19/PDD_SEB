@@ -1,0 +1,113 @@
+ 
+.topbar {
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 75px;
+	margin-left: 0;
+	transition: all .3s;
+	z-index: 9997;
+}
+
+.topbar .bars {
+	float: left;
+	display: flex;
+	align-items: center;
+	height: 75px;
+	margin-left: 10px;
+}
+
+.topbar .bars button {
+	color: var(--default-color);
+	box-shadow: none;
+	display: block;
+	box-shadow: none !important;
+}
+
+.topbar .bars button i {
+	font-size: 28px;
+}
+
+.topbar .bars button:hover {
+	color: var(--default-color);
+}
+
+.topbar .menu {
+	float: right;
+	display: flex;
+	align-items: center;
+	height: 75px;
+	padding: 0 10px;
+}
+
+.topbar .menu ul {
+	padding: 0;
+	margin: 0;
+}
+.topbar .menu ul li span{
+	margin-left: 12px;
+	font-size: 15px;
+}
+ 
+.topbar .menu ul li {
+	display: inline-block;
+	margin: 8px 10px 0 10px;
+}
+
+.topbar .menu ul li a {
+	text-decoration: none;
+	color: var(--default-color);
+}
+
+ 
+.topbar .menu ul li a:hover,
+.topbar .menu ul li .dropdown-toggle:hover {
+	color: var(--default-color);
+}
+
+.topbar .menu ul li .dropdown-toggle {
+	color: var(--default-color);
+	cursor: pointer;
+}
+
+.topbar .menu ul li .dropdown-menu {
+	margin-top: 30px;
+	margin-right: 10px;
+ 	border: 0;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+	background: #081A51;
+}
+
+.topbar .menu ul li .dropdown-menu a{
+	color: #017EFA;
+	font-weight: 500;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+}
+
+.topbar .menu ul li img {
+	width: 50px;
+	height: 50px;
+	margin-top: -8px;
+	border: 2px solid #D9DADB;
+	border-radius: 100px;
+}
+
+.topbar .menu ul li a .notif {
+	position: absolute;
+	margin-top: -10px;
+	margin-left: -10px;
+	border-radius: 100px;
+	font-size: 11px;
+}
+
+@media (min-width: 992px) {
+	.topbar {
+		margin-left: 275px;
+	}
+
+	.topbar .bars button {
+		display: none;
+	}
+}

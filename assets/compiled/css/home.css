@@ -1,0 +1,114 @@
+@keyframes verticalVibration {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+#header {
+  background-color: #3498DB; /* Darker background for header */
+  padding: 20px 0;
+}
+
+#header img {
+  display: block;
+  margin: 0 auto;
+}
+
+#hero {
+  background: linear-gradient(to right, #3B4E7B, #1F2A38); /* Gradient background */
+  color: white;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#hero h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.btn-primary {
+  background-color: #3498DB; /* Blue background */
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #3B4E7B; /* Darker blue on hover */
+}
+
+#footer {
+  background-color: #3498DB;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#footer p {
+  margin: 0;
+}
+
+.back-to-top {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 50px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marquee-text-wrapper {
+  display: flex;
+  white-space: nowrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite; /* Increased duration for smoother scrolling */
+  font-size: 20px; /* Adjust font size as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
