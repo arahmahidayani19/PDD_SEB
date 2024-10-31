@@ -1,3 +1,0 @@
-"# pdd" 
-"# pdd" 
-"# pdd-sanwa" 
